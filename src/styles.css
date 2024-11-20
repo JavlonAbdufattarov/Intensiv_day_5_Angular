@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Steppe-Book';
+  src: url('assets/font/Steppe-Book.ttf');
+}
+@font-face {
+  font-family: 'Steppe-ExtraBold';
+  src: url('assets/font/Steppe-ExtraBold.ttf');
+}
+
+body{
+  background-color: #5243F4;
+  font-family: 'Steppe-Book', sans-serif;
+  color: white;
+}
+.contaier{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.button{
+  background-color: white;
+  border-radius: 60px;
+  width: 178px;
+  height: 58px;
+  box-sizing: border-box;
+  padding: 18px;
+  text-align: center;
+  font-size: 18px;
+  color: #5243F4;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.violet-button{
+  background-color: #5243F4;
+  color: white;
+}
+
+.button:disabled{
+   cursor: not-allowed;
+  color: gray;
+  background-color: #343434;
+}
+
+.button:hover:not(:disabled){
+  background-color: #eeeeee;
+}
+
+.button.violet-button:hover:not(:disabled){
+  background-color: #1428cb;
+}
+
+.common-title{
+  font-family: 'Steppe-ExtraBold', sans-serif;
+  font-size: 60px;
+  line-height: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.line1{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: calc(100% - 960px);
+}
+.line2{
+  position: absolute;
+  z-index: -1;
+  top: -40px;
+  left: 0;
+}
+.line3{
+  position: absolute;
+  z-index: -1;
+  top: -920px;
+  left: 0;
+}
